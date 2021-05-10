@@ -12,10 +12,19 @@
     />
   </head>
   <body>
-    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-    <include src="./partials/example.html"></include>
+    <div class="container">
+      <button class="button task1-js">
+        <p data-title="Show in console">TASK 1</p>
+      </button>
+      <button class="button task2-js">
+        <p data-title="Show in console">TASK 2</p>
+      </button>
+      <button class="button task3-js">
+        <p data-title="Show in console">TASK 3</p>
+      </button>
+    </div>
 
-    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
   </body>
 </html>
+

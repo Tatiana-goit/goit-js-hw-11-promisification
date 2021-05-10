@@ -1,7 +1,29 @@
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  body {
+    font-family: 'Montserrat';
+    text-align: center;
+  }
+  
+  .button {
+    font-size: 20px;
+    margin-top: 200px;
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    color: rgb(107, 37, 37);
+    border-radius: 50px;
+    &:not(:last-child) {
+      margin-right: 80px;
+    }
+  }
 
-// Стили для файла с примером HTML-фрагмента
-@import './example';
+.button:hover{
+    font-weight: 700;
+    border: none;
+    box-shadow: 0 4px 15px 0 rgba(70, 73, 77, 0.75);
+}
